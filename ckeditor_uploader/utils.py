@@ -8,9 +8,9 @@ import string
 
 from django.conf import settings
 from django.core.files.storage import default_storage
-from django.template.defaultfilters import slugify
+#from django.template.defaultfilters import slugify
 from django.utils.encoding import force_text
-
+from slugify import slugify
 # Non-image file icons, matched from top to bottom
 fileicons_path = '{}/file-icons/'.format(getattr(settings, 'CKEDITOR_FILEICONS_PATH', '/static/ckeditor'))
 CKEDITOR_FILEICONS = getattr(settings, 'CKEDITOR_FILEICONS', [
